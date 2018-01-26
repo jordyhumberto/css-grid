@@ -1,0 +1,135 @@
+/*primer ejemplo*/
+*{
+  color: orange;
+  font-size: 1rem;
+  padding: 0;
+  margin: 0;
+}
+.wrapper div{
+    background-color: blue;
+}
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    grid-auto-rows: minmax(100px, auto);
+  }
+  .one {
+    grid-column: 1 / 3;
+    grid-row: 1;
+  }
+  .two { 
+    grid-column: 2 / 4;
+    grid-row: 1 / 3;
+  }
+  .three {
+    grid-column: 1;
+    grid-row: 2 / 5;
+  }
+  .four {
+    grid-column: 3;
+    grid-row: 3;
+  }
+  .five {
+    grid-column: 2;
+    grid-row: 4;
+  }
+  .six {
+    grid-column: 3;
+    grid-row: 4;
+}
+  /*segundo ejemplo*/
+  .grid{
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    grid-template-rows: 200px 200px 200px 200px;
+    grid-column-gap: .5rem;
+    grid-row-gap:1rem ;
+  }
+  .grid-item{
+    box-sizing: border-box; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4rem;
+  }
+  .grid-item:nth-child(2n){
+    background-color: blue;
+  }
+  .grid-item:nth-child(2n+1){
+    background-color:red;
+  }
+  /*tercer ejemplo*/
+  .gridd{
+    display: grid;
+    grid-template-columns:1fr 2fr 1fr 2fr;
+    grid-template-rows: 3rem 3rem 3rem;
+    grid-gap: 1rem;
+  }
+  .gridd-item{
+    box-sizing: border-box; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4rem;
+  }
+  .gridd-item:nth-child(2n){
+    background-color: blue;
+  }
+  .gridd-item:nth-child(2n+1){
+    background-color:red;
+  }
+  @media screen and (max-width:1024px){
+    .gridd{
+      grid-template-columns:1fr 2fr;
+      grid-template-rows: 3rem 3rem 3rem 3rem 3rem 3rem;
+    }
+  }
+  @media screen and (max-width:414px){
+    .gridd{
+      grid-template-columns:1fr 1fr 1fr;
+      grid-template-rows: 3rem 3rem 3rem 3rem;
+    }
+  }
+  /*cuarto ejemplo*/
+  .griid{
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-auto-rows: 1fr;
+    grid-gap: 1rem;
+  }
+  .griid_item:nth-child(2n+1){
+    background-color: red;
+  }
+  .griid_item:nth-child(2n){
+    background-color: blue;
+  }
+  /*quinto ejemplo*/
+  .griiid{
+    height: 20rem;
+    display: grid;
+    grid-template-columns: repeat(3,1fr 2fr);
+    grid-auto-rows: 1fr;
+    grid-gap: 1rem;
+  }
+  .griiid-item:nth-child(2n){
+    background-color: blue;
+  }
+  .griiid-item:nth-child(2n+1){
+    background-color:red;
+  }
+  /*sexto ejemplo*/
+  .grrrid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(150px,1fr));
+    grid-gap: 1rem;
+  }
+  .grrrid-item:nth-child(2n+1){
+    background: red;
+  }
+  .grrrid-item:nth-child(2n){
+    background-color: blue;
+  }
+  .grrrid-item:nth-child(1){
+    grid-row: span 5;
+  }
