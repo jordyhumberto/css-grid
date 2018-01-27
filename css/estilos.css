@@ -133,3 +133,39 @@
   .grrrid-item:nth-child(1){
     grid-row: span 5;
   }
+  /*septimo ejemplo*/
+  .griiiid{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows:  repeat(3,10rem);
+    grid-gap: 1rem;
+  }
+  .griiiid-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    color:white;
+  }
+  .griiiid-item:nth-child(2n){
+    background-color: blue;
+  }
+  .griiiid-item:nth-child(2n+1){
+    background-color: red;
+  }
+  .griiiid-item:nth-child(8){
+    grid-column: 3/4;
+    grid-row: 3/4;
+  }
+  .griiiid-item:nth-child(7){
+    grid-column: 2/3;
+    grid-row: 3/4;
+  }
+  .griiiid-item:nth-child(6){
+    grid-column: 1/2;
+    grid-row: 3/4;
+  }
+  .griiiid-item:nth-child(5){
+    grid-column: 3/4;
+    grid-row: 2/3;
+  }
