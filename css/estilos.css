@@ -169,3 +169,128 @@
     grid-column: 3/4;
     grid-row: 2/3;
   }
+  /*octavo ejemplo*/
+  .ggrid{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,10rem);
+    grid-gap: 1rem;
+  }
+  .ggrid-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    color: white;
+  }
+  .ggrid-item:nth-child(2n){
+    background-color: blue;
+  }
+  .ggrid-item:nth-child(2n+1){
+    background-color: red;
+  }
+  .ggrid-item:nth-child(6){
+    grid-column: 3/4;
+    grid-row: 3/4;
+  }
+  .ggrid-item:nth-child(5){
+    grid-column: 2/3;
+    grid-row: 3/4;
+  }
+  .ggrid-item:nth-child(4){
+    grid-column: 1/2;
+    grid-row: 3/4;
+  }
+  .ggrid-item:nth-child(3){
+    grid-column: 3/4;
+    grid-row: 2/3;
+  }
+  .ggrid-item:nth-child(2){
+    grid-column: 2/3;
+    grid-row: 2/3;
+  }
+  .ggrid-item:nth-child(1){
+    grid-column: 3/4;
+    grid-row: 1/2;
+  }
+  /*noveno ejemplo*/
+  .gggrid{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,10rem);
+    grid-gap: 1rem;
+  }
+  .gggrid-item:nth-child(2n+1){
+    background-color: blue;
+  }
+  .gggrid-item:nth-child(2n){
+    background-color: red;
+  }
+  .gggrid-item:nth-child(1){
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+  .gggrid-item:nth-child(2){
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+  .gggrid-item:nth-child(3){
+    grid-column: 1/2;
+    grid-row: 3/4;
+  }
+  .gggrid-item:nth-child(4){
+    grid-column: 2/3;
+    grid-row: 3/4;
+  }
+  .gggrid-item:nth-child(5){
+    grid-column: 3/4;
+    grid-row: 1/2;
+  }
+  .gggrid-item:nth-child(6){
+    grid-column: 3/4;
+    grid-row: 2/3;
+  }
+  .gggrid-item:nth-child(7){
+    grid-column: 3/4;
+    grid-row: 3/4;
+  }
+  /*decimo ejemplo*/
+  .grridd{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(6,10rem);
+    grid-gap: 1rem;
+  }
+  .grridd-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    color: white;
+  }
+  .grridd-item:nth-child(2n+1){
+    background-color: red;
+  }
+  .grridd-item:nth-child(2n){
+    background-color: blue;
+  }
+  .grridd-item:nth-child(1){
+    grid-column: span 3;
+  }
+  .grridd-item:nth-child(2){
+    grid-column: 1/2;
+    grid-row: 2/3;
+    grid-row: span 3;
+  }
+  .grridd-item:nth-child(3){
+    grid-row: span 2;
+  }
+  .grridd-item:nth-child(4){
+    grid-column: 3/4;
+    grid-row: span 3;
+  }
+  .grridd-item:nth-child(5){
+    grid-row: 5/6;
+    grid-column: 1/2;
+    grid-column: span 3;
+  }
